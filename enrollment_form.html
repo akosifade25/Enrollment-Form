@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Student Enrollment Form</h1>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Instructions Section -->
+            <div class="instructions">
+                <p>Instructions:</p>
+                <ol>
+                    <li>Fill in the Forms.</li>
+                    <li>Check your Interests.</li>
+                    <li>Click “Enroll Now” to submit.</li>
+                </ol>
+            </div>
+
+            <!-- Enrollment Form Section -->
+            <div class="form-placeholder">
+                <form class="enrollment-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Sex:</label>
+                        <input type="radio" id="male" name="sex" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="sex" value="female">
+                        <label for="female">Female</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course-options">Course Options:</label>
+                        <select id="course-options" name="course-options">
+                            <option value="" disabled selected>Select a Course</option>
+                            <option value="ABELS">ABELS</option>
+                            <option value="BSA">BSA</option>
+                            <option value="BSAIS">BSAIS</option>
+                            <option value="BSE">BSE</option>
+                            <option value="BSIT">BSIT</option>
+                            <option value="BSPA">BSPA</option>
+                            <option value="BSSW">BSSW</option>
+                            <option value="BTVTED">BTVTED</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Interests:</label>
+                        <input type="checkbox" id="web-dev" name="interest" value="Web Development">
+                        <label for="web-dev">Web Development</label>
+                        <input type="checkbox" id="networking" name="interest" value="networking">
+                        <label for="data-science">Networking</label>
+                        <input type="checkbox" id="data-science" name="interest" value="data-science">
+                        <label for="web-dev">Data Science</label>
+                        <input type="checkbox" id="graphic-design" name="interest" value="graphic-design">
+                        <label for="data-science">Graphic Design</label>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Enroll Now</button>
+                    </div>
+                    <!-- <button type="submit">Enroll Now</button> -->
+                </form>
+            </div>
+        </div>
+
+        <!-- Student Data Section -->
+        <div class="student-data">
+            <h2>Lists of Enrolled Students</h2>
+        </div>
+
+        <!-- Table Section -->
+        <div class="table-placeholder">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Sex</th>
+                        <th>Course</th>
+                        <th>Interests</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>023A-0001</td>
+                        <td>Joshua Deñado</td>
+                        <td>joshuadeñado@gmail.com</td>
+                        <td>20</td>
+                        <td>Male</td>
+                        <td>BSIT</td>
+                        <td>Web Development</td>
+                    </tr>
+                    <tr>
+                        <td>023A-0002</td>
+                        <td>John Oliver Liwanag</td>
+                        <td>johnoliverliwanag@gmail.com</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>BSPA</td>
+                        <td>Graphic Design</td>
+                    </tr>
+                    <tr>
+                        <td>023A-0003</td>
+                        <td>Sharlene Mae Habito</td>
+                        <td>sharlenehabito@gmail.com</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>BTVTED</td>
+                        <td>Networking</td>
+                    </tr>
+                    <tr>
+                        <td>023A-0004</td>
+                        <td>Patrick Laurence Lagaya</td>
+                        <td>patricklagaya@gmail.com</td>
+                        <td>20</td>
+                        <td>Male</td>
+                        <td>BSA</td>
+                        <td>Graphic Design</td>
+                    </tr>
+                    <tr>
+                        <td>023A-0005</td>
+                        <td>Jeanne Nicole Gianan</td>
+                        <td>jeannenicole@gmail.com</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>BSIT</td>
+                        <td>Data Science</td>
+                    </tr>
+                    <tr>
+                        <td>023A-0006</td>
+                        <td>Joanne Juanane</td>
+                        <td>joannejuanane@gmail.com</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>BSSW</td>
+                        <td>Graphic Design</td>
+                    </tr>
+                    <tr>
+                        <td>023A-0007</td>
+                        <td>Din Lienard Dudas</td>
+                        <td>dinlienarddudas@gmail.com</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>BSE</td>
+                        <td>Networking</td>
+                    </tr>
+                    <tr>
+                        <td>023A-0008</td>
+                        <td>Prince Agustines</td>
+                        <td>princeagustines@gmail.com</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>BSIT</td>
+                        <td>Web Development</td>
+                    </tr>
+                    <tr>
+                        <td>023A-0009</td>
+                        <td>Angelica Castillo</td>
+                        <td>angelicacastillo@gmail.com</td>
+                        <td>19</td>
+                        <td>Female</td>
+                        <td>BSSW</td>
+                        <td>Graphic Design</td>
+                    </tr>
+                    <tr>
+                        <td>023A-0010</td>
+                        <td>Avian Cayle Inciong</td>
+                        <td>avicayleinciong@gmail.com</td>
+                        <td>21</td>
+                        <td>Male</td>
+                        <td>BSIT</td>
+                        <td>Networking</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
